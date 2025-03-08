@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f0f0f0;
+            transition: background 0.5s ease;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+        }
+
+        nav {
+            background: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .box {
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            background: white;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-color: #ffcccb;
+            }
+
+            header {
+                background: #ff5733;
+            }
+
+            .box {
+                background: #ffdd57;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                background-color: #a5d6a7;
+            }
+
+            header {
+                background: #2e7d32;
+            }
+
+            .box {
+                background: #81c784;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>Responsive Website</header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="box">
+            <h2>Welcome to Our Website</h2>
+            <p>This website changes its background and content based on screen size.</p>
+        </section>
+
+        <section id="about" class="box">
+            <h2>About Us</h2>
+            <p>We create responsive websites that adapt to any screen size.</p>
+        </section>
+
+        <section id="services" class="box">
+            <h2>Our Services</h2>
+            <p>We offer web development, design, and mobile optimization services.</p>
+        </section>
+
+        <section id="contact" class="box">
+            <h2>Contact Us</h2>
+            <p>Email us at: support@example.com</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Responsive Web Design</p>
+    </footer>
+
+</body>
+</html>

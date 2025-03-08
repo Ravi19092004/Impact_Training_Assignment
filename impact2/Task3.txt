@@ -1,0 +1,62 @@
+Q3) Create notes on the following concepts with examples:
+
+### 1. JavaScript Overview
+JavaScript is a programming language used for making web pages interactive. 
+Example:
+console.log("Hello, JavaScript!");
+ 
+
+### 2. Variables in JavaScript
+Three ways to declare variables:
+- var (old, function-scoped)
+- let (modern, block-scoped)
+- const (unchangeable)
+Example:
+let name = "Ravi";  // String
+const age = 20;      // Number
+var isStudent = true; // Boolean
+ 
+
+### 3. Data Types
+| Data Type | Example |
+|-----------|---------|
+| String    | "Hello" |
+| Number    | 100, 3.14 |
+| Boolean   | true, false |
+| Object    | { name: "Ravi", age: 20 } |
+| Array     | [10, 20, 30] |
+| Undefined | let x; |
+| Null      | let y = null; |
+
+### 4. Comments
+- Single-line Comment: `// This is a comment`
+- Multi-line Comment:
+/*
+  Multi-line comment
+*/
+ 
+
+### 5. Identifier Rules
+- Start with a **letter, $, or _**.
+- Cannot start with a **number**.
+- Case-sensitive.
+
+Valid:
+let _userName;
+let $price;
+ 
+Invalid:
+let 1number; // ❌
+let var; // ❌ Reserved keyword
+
+### 6. Operators & Precedence
+| Operator | Symbol | Example |
+|----------|--------|---------|
+| Arithmetic | `+ - * / %` | `a + b` |
+| Assignment | `= += -=` | `a += 2` |
+| Relational | `> < >= <=` | `a > b` |
+| Logical | `&& || !` | `a && b` |
+| Bitwise | `& | ^ << >>` | `a & b` |
+
+Example:
+let result = 10 + 5 * 2; // Output: 20 (Multiplication first)
